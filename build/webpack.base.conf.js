@@ -100,10 +100,10 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: `${PATHS.assets}css/[name].css`
     }),
-    new CopyWebpackPlugin({
+    new CopyWebpackPlugin([{
       from: `${PATHS.src}/img`,
       to: `${PATHS.assets}img`
-    }),
+    }]),
     ...PAGES.map(page => new HtmlWebpackPlugin({
       template: `${PAGES_DIR}/${page}`,
       filename: `./${page.replace(/\.pug/,'.html')}`
