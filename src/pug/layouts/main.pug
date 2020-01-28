@@ -8,8 +8,7 @@ html(lang="ru")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title #{title}
   body(class=pageClass)
-    include ../includes/header
-
-    block content
-
-    include ../includes/footer
+    .wrapper
+      include ../includes/header
+      block content
+      include ../includes/footer
