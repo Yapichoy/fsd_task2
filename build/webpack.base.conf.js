@@ -3,7 +3,7 @@ const fs = require('fs');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const PATHS = {
-  root: path.join(__dirname, '../production'),
+  root: path.join(__dirname, '/'),
   src: path.join(__dirname, '../src'),
   dist: path.join(__dirname, '../production'),
   assets: 'assets/'
@@ -20,7 +20,7 @@ module.exports = {
   output :{
     filename: `${PATHS.assets}js/[name].js`,
     path: PATHS.dist,
-    publicPath: '/production'
+    publicPath: '/'
   },
   module: {
     rules: [
