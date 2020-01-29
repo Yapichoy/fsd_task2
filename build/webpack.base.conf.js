@@ -93,6 +93,13 @@ module.exports = {
         options:{
           name: '[name].[ext]'
         }
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        loader: "file-loader",
+        options:{
+          name: '[name].[ext]'
+        }
       }    
     ]
   },
@@ -100,10 +107,16 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: `${PATHS.assets}css/[name].css`
     }),
-    new CopyWebpackPlugin([{
-      from: `${PATHS.src}/img`,
-      to: `${PATHS.assets}img`
-    }]),
+    new CopyWebpackPlugin([
+      {
+        from: `${PATHS.src}/img`,
+        to: `${PATHS.assets}img`
+      }, 
+      {
+        from: `${PATHS.src}/fonts`,
+        to: `${PATHS.assets}fonts`
+      }
+    ]),
     ...PAGES.map(page => new HtmlWebpackPlugin({
       template: `${PAGES_DIR}/${page}`,
       filename: `./${page.replace(/\.pug/,'.html')}`
