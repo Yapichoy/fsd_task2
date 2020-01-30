@@ -1,0 +1,6 @@
+@import "mixins";
+
+/*Base Quicksand*/
+@include font-face("quicksand", "/assets/fonts/quicksandregular/quicksandregular");
+@include font-face("OpenSans", "/assets/fonts/quicksandlight/quicksandlight", lighter);
+@include font-face("OpenSans", "/assets/fonts/quicksandbold/quicksandbold", bold);

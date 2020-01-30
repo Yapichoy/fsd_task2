@@ -21,18 +21,38 @@ html {
 
 body {
   font-family: $mainFont;
-	font-family: $mainFontSize;
+	font-size: $mainFontSize;
   font-weight: $mainFontWeight;
+  line-height: 24px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
+  color: $darkShade75;
 }
 
 *, *:before, *:after { box-sizing: border-box; }
 
-h1, h2, h3, h4, h5, h6 { margin: 0; }
-
+h1, h2, h3, h4, h5, h6 { 
+  margin: 0; 
+  font-family: "quicksand";
+  font-style: normal;
+  font-weight: bold;
+  color: $darkShade100;
+}
+h1 {
+  font-size: 24px;
+  line-height: 30px;
+}
+h2 {
+  font-size: 19px;
+  line-height: 24px;
+}
+h3 {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
 a {
 	text-decoration: none;
 }
@@ -42,7 +62,10 @@ ul, li {
   margin: 0;
   padding: 0;
 }
-
+p {
+  margin: 0;
+  padding: 0;
+}
 section, .section {
   position: relative;
   padding: 40px 0;
@@ -89,3 +112,5 @@ section, .section {
 
 @import "modules/header.scss";
 @import "modules/wrapper.scss";
+@import "modules/ui.scss";
+@import "modules/color-view.scss";
