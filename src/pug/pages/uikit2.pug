@@ -1,0 +1,14 @@
+extends ../layouts/uikit-main
+include ../includes/components/text-field
+
+block variables
+  - var title = "Form Elements"
+
+block content
+  .container
+    .ui-wrapper
+      .ui-column
+        .row
+          +textField('email', 'Email')
+        .row
+          +textField('date', 'ДД.ММ.ГГГГ')      

@@ -1,0 +1,30 @@
+extends ../layouts/uikit-main
+include ../mixins/color-view
+
+block variables
+  - var title = "UI Kit 1"
+
+block content
+  .container
+    .ui-wrapper
+      .ui-column
+        +color_view("Dark Shade 100%", "#1F2041", "darkShade100")
+        +color_view("Dark Shade 75%", "#1F2041", "darkShade75")
+        +color_view("Dark Shade 50%", "#1F2041", "darkShade50")
+        +color_view("Dark Shade 25%", "#1F2041", "darkShade25")
+        +color_view("Dark Shade 5%", "#1F2041", "darkShade5")
+        +color_view("Purple", "#BC9CFF", "purple")
+        +color_view("Green", "#BC9CFF", "green")
+      .ui-column
+        .row
+          .ui-label.ui-h1 H1
+          h1 This one is the sub-section or widget title
+        .row
+          .ui-label.ui-h2 H2
+          h2 Next one is the item title inside widgets
+        .row
+          .ui-label.ui-h3 H3
+          h3 This is a label or CTA text
+        .row
+          .ui-label.ui-body Body
+          p This is the body text which is used for most of the design, like paragraphs, lists, etc. 
