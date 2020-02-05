@@ -104,6 +104,12 @@ module.exports = {
       }    
     ]
   },
+  resolve: {
+    alias: {
+        '@modules': path.resolve(__dirname, '../node_modules'),
+        'vendors': path.resolve(__dirname, '../vendors')
+    }
+  },
   plugins:[
     new MiniCssExtractPlugin({
       filename: `${PATHS.assets}css/[name].css`

@@ -1,0 +1,24 @@
+.datepicker__wrapper{
+    width: 100%;
+    position: relative;
+
+    .date-dropdown{
+        background: #FFFFFF;
+        border: 1px solid $darkShade25;
+        border-radius: 4px;
+        color: $darkShade75;
+        padding: 13px 15px 13px;
+        width: 100%;
+    }
+    .expand{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 44px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}

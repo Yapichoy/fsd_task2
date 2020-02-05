@@ -1,5 +1,6 @@
 extends ../layouts/uikit-main
 include ../includes/components/text-field
+include ../includes/elements/date_dropdown
 
 block variables
   - var title = "Form Elements"
@@ -9,6 +10,8 @@ block content
     .ui-wrapper
       .ui-column
         .row
-          +textField('email', 'Email')
+          +textField('email', 'email', 'Email')
         .row
-          +textField('date', 'ДД.ММ.ГГГГ')      
+          +textField('date', 'text','ДД.ММ.ГГГГ')
+        .row 
+          +dateDropdown('pickup-date')
