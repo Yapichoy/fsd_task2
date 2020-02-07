@@ -1,6 +1,9 @@
 extends ../layouts/uikit-main
-include ../includes/components/text-field
+include ../includes/elements/text-field
 include ../includes/elements/date_dropdown
+include ../includes/elements/filter_date_dropdown
+include ../includes/elements/subscription_text_field.pug
+include ../includes/elements/dropdown.pug
 
 block variables
   - var title = "Form Elements"
@@ -15,3 +18,10 @@ block content
           +textField('date', 'text','ДД.ММ.ГГГГ')
         .row 
           +dateDropdown('pickup-date')
+        .row
+          +filterDateDropdown('filter-date')
+        .row
+          +subscriptionTextField('text-field')
+        .row
+          +dropdown('room_dropdown')
+          

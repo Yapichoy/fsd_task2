@@ -29,6 +29,8 @@ body {
   margin: 0;
   padding: 0;
   color: $darkShade75;
+  max-width: $desktopWidth ;
+  min-width: $smPhoneWidth;
 }
 
 *, *:before, *:after { box-sizing: border-box; }
@@ -116,3 +118,6 @@ section, .section {
 @import "modules/color-view.scss";
 @import "modules/text-field.scss";
 @import "modules/date-dropdown.scss";
+@import "modules/filter-date-dropdown.scss";
+@import "modules/subscription-text-field.scss";
+@import "modules/dropdown.scss";
