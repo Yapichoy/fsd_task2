@@ -23,5 +23,7 @@ block content
         .row
           +subscriptionTextField('text-field')
         .row
-          +dropdown('room_dropdown', {name: 'Спальни', id: 'room' }, {name: 'Кровати', id: 'bad' }, {name: 'Ванные комнаты', id: 'bath' })
+          +dropdown('room_dropdown', "Настройка номера", {name: 'Спальни', id: 'room' }, {name: 'Кровати', id: 'bad' }, {name: 'Ванные комнаты', id: 'bath' })
+        .row
+          +dropdown('guest_dropdown',"Сколько гостей", {name: 'Взрослые', id: 'adults' }, {name: 'Дети', id: 'childrens' }, {name: 'Младенцы', id: 'babies' })
           
