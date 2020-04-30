@@ -46,7 +46,7 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery.maskedinput": "^1.4.1"
   }
 }
